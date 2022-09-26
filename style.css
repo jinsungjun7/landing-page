@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    height:100vh;
+    margin:0;
+    overflow:auto;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    
+    /*This is what lets you have white spaces on both sides of the page*/
+    max-width: 1200px;
+    margin:0px auto;
+    padding:0px 8px;
+
+}
+
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+
+    margin-bottom:20px;
+}
+
+
+.header::before{
+    content:"";
+    background-color: #f4f4df;
+    position: absolute;
+    height:200%;
+    width:4000px;
+    left:-2000px;
+    z-index:-1;   
+}
+
+
+.main-title {
+    color:#0c4504;
+    font-weight:600;
+    font-size:30px;
+    font-variant:small-caps;
+    font-family: 'Helvetica Nue';
+}
+
+.header ul {
+    margin=0;
+    padding=0;
+    display:flex;
+    list-style:none;
+    gap:16px;
+    font-weight:400;
+}
+
+a {
+    color:#0c4504;
+    text-decoration:none;
+    font-weight:500px;
+}
+
+
+.body {
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+    
+}
+
+.section1, .section2, .section3, .footer {
+    display:flex;
+}
+
+.section1 {
+    justify-content:space-between;
+    gap: 32px;
+    position:relative;
+}
+
+.section1::before{
+    content:"";
+    background-color: #f4f4df;
+    position: absolute;
+    height:105%;
+    width:4000px;
+    left:-2000px;
+    z-index:-1;   
+}
+    
+.top-container {
+    display:flex;
+    flex-direction:column;
+    width:600px;
+    flex:1;                                                                                                                              
+    
+}
+
+.top-container .title {
+    text-align:left;
+    font-size:48px;
+    font-family: sans-serif;
+}
+
+.top-container .top-text {
+    font-size:18px;
+    line-height:1.5;
+    font-family:sans-serif
+}
+
+.section1 img {
+    flex:1;
+    
+}
+
+.title {
+    font-size:30px;
+    font-weight:600;     
+    font-family: 
+}
+    
+.section2 { 
+    flex-direction:column;
+    padding-top:16px;
+    gap:16px;
+}
+
+
+
+.mid-container {
+    display:flex;
+    text-align:center;
+    gap:36px;
+    padding:16px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+
+/*this was for cropping images so they are all the same size*/
+.section2 img {
+    float: left;
+    width: 300px;
+    height: 200px;
+    object-fit:cover;
+}
+
+.section2 .info {
+    display:flex;
+    flex-direction:column;
+    gap:8px
+}
+.section3 {
+    padding:16px 0px;
+    position:relative;
+    justify-content:space-between;
+    
+}
+
+.why-container {
+    display:flex;
+    justify-content:flex-end;
+    
+}
+
+.section3 ul {
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin:0;'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:0;
+    text-align:right;
+    
+}
+
+.why-container li {
+    font-size:20px;
+    
+}
+
+
+.footer {
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    gap:32px;
+    color:white;
+}
+
+.footer:before{
+    content:"";
+    background-color: #0c4504;
+    position: absolute;
+    height:100%;
+    width:4000px;
+    left:-2000px;
+    z-index:-1;
+    
+}
+
+.footer .info-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    margin-top:-20px;
+}
+
+.times .sub-title {
+    font-size:24px;
+}
+
+.times ul {
+    font-size: 18px;
+    padding: 16px 0;
+    margin:0;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:4px
+}
+
+
+.contact {
+    display:flex;
+    flex-direction:column;
+    align-items:end;
+    gap:8px
+}
+.contact .sub-title {
+    font-size:24px;
+}
+
+.phone, .address {
+    font-size:18px;
+}
+
+.copyright {
+    text-align:center;
+}
+
+
